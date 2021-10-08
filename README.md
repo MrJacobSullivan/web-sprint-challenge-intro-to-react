@@ -63,7 +63,7 @@ After finishing your required elements, you can push your work further. These go
 
 - [x] Make the Character component more complex and break it into several subcomponents.
 - [ ] Use the endpoint `[GET] https://swapi.dev/api/films` (mocked in msw) to obtain movie information to render with the characters.
-- [ ] Create a helper function in separate module to remove unneeded information from the API data, before putting it in state.
+- [x] Create a helper function in separate module to remove unneeded information from the API data, before putting it in state.
 - [x] Create transitions or animations with styled-components.
 - [ ] Use Promise.all to resolve an array of promises.
 
@@ -78,18 +78,18 @@ After finishing your required elements, you can push your work further. These go
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Put your answers underneath the questions:
 
-1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.\
+1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
 React JS is a frontend Javascript framework. It is used to exrapolate the difficulty of working with the DOM.
 
-2. Describe component state.\
+2. Describe component state.
 
 Component state are variables declared and handled within a component.
 
-3. Describe props.\
+3. Describe props.
 
 Props are variables that are passed to a component from its parent.
 
-4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?\
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
 Side effects are like functions that are called when a certain event occurs. You can have a an effect trigger when a state variable changes by supplying the state variable inside an array.
