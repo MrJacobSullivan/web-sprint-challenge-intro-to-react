@@ -1,13 +1,11 @@
 import React from 'react'
-
-import { Main, Title } from './components/Styled'
 import CharacterList from './components/CharacterList'
-
+import { Main, Title } from './components/Styled'
 import './App.css'
 
 const App = () => {
   return (
-    <Main className='container'>
+    <Main>
       <Title>Characters</Title>
       <CharacterList />
     </Main>

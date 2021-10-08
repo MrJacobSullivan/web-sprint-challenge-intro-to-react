@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { CharacterListContainer } from './Styled'
 import Character from './Character'
+import { CharacterListContainer } from './Styled'
 import { useDataFetch } from '../hooks/useDataFetch'
 import { BASE_URL } from '../constants'
 
@@ -14,7 +14,7 @@ export default function CharacterList() {
   }, [data])
 
   return (
-    <CharacterListContainer className='accordion'>
+    <CharacterListContainer>
       {loading ? (
         <p>loading...</p>
       ) : (

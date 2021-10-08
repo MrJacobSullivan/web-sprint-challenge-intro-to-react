@@ -18,40 +18,46 @@ export const Title = styled.h1`
 `
 
 export const CharacterListContainer = styled.section`
+  margin-bottom: 5%;
   width: 60%;
+
   color: ${({ theme }) => theme.text};
 `
 
 export const CharacterCard = styled.li`
-  margin: 2%;
-  height: auto;
-  padding: 5%;
   cursor: pointer;
+  height: auto;
+  margin: 2%;
+  padding: 5%;
+  transition: all 0.3s ease-out;
 
   * {
     transition: all 0.3s ease-out;
   }
 
+  background: ${({ theme }) => theme['secondary-background']};
   border: 2px solid ${({ theme, open }) => (open ? theme.secondary : 'transparent')};
 
   &:hover {
     border: 2px solid ${({ theme, open }) => (open ? theme.secondary : theme.tertiary)};
   }
-
-  background: ${({ theme }) => theme['secondary-background']};
 `
 
 export const CharacterName = styled.h2`
-  font-size: 1.6rem;
-  width: 100%;
-  margin: 0;
   display: flex;
+  font-size: 1.6rem;
+  font-weight: 700;
   justify-content: center;
-  padding: 5% 0;
-
-  border-bottom: 1px solid ${({ open, theme }) => (open ? theme.secondary : theme.text)};
+  margin: 0;
+  padding: 5% 0 7%;
+  width: 100%;
 
   background: ${({ theme }) => theme['secondary-background']};
+  border-bottom: 1px solid ${({ open, theme }) => (open ? theme.secondary : theme.text)};
+
+  &:hover {
+    border-bottom: 1px solid ${({ open, theme }) => (open ? theme.secondary : theme.tertiary)};
+  }
 `
 
 export const CharacterDetailsWrapper = styled.div`
@@ -62,9 +68,21 @@ export const CharacterDetailsWrapper = styled.div`
   max-height: ${({ open }) => (open ? '20vh' : '0')};
 `
 
-export const Label = styled.p`
+export const Text = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 3% 0;
 `
 
-export const Text = styled.span``
+export const Label = styled.p`
+  font-weight: 300;
+`
+
+export const Value = styled.p`
+  font-weight: 400;
+  text-transform: capitalize;
+
+  span {
+    text-transform: none;
+  }
+`
