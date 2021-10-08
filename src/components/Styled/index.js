@@ -17,6 +17,12 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.text};
 `
 
+export const Loading = styled.p`
+  font-size: 1.4rem;
+
+  color: ${({ theme }) => theme['secondary-background']};
+`
+
 export const CharacterListContainer = styled.section`
   margin-bottom: 5%;
   width: 60%;
