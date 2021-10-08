@@ -19,7 +19,7 @@ export default function CharacterList() {
       {
         <ul>
           {data.map((character, index) => (
-            <Character key={index} {...character} />
+            <Character key={index} character={character} />
           ))}
         </ul>
       }
