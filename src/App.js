@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useDataFetch } from './hooks/useDataFetch'
 import { BASE_URL } from './constants'
+import Character from './components/Character'
 import './App.css'
 
 const App = () => {
@@ -26,7 +27,9 @@ const App = () => {
       ) : (
         <ul>
           {data.map((character) => (
-            <li key={character.name}>{character.name}</li>
+            <li key={character.name}>
+              <Character character={character} />
+            </li>
           ))}
         </ul>
       )}
