@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useDataFetch } from './hooks/useDataFetch'
 import { BASE_URL } from './constants'
 import Character from './components/Character'
+import { Main } from './components/Styled'
 import './reset.css'
 import './App.css'
 
@@ -21,7 +22,7 @@ const App = () => {
   }, [data])
 
   return (
-    <div className='App'>
+    <Main>
       <h1 className='Header'>Characters</h1>
       {loading ? (
         <p>loading...</p>
@@ -34,7 +35,7 @@ const App = () => {
           ))}
         </ul>
       )}
-    </div>
+    </Main>
   )
 }
 
