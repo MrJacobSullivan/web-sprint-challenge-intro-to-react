@@ -1,8 +1,14 @@
-/* .App {
-  text-align: center;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: '#212529';
 }
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
-} */
-/* write your parent styles in here for your App.js */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

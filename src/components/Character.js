@@ -1,9 +1,14 @@
 import React from 'react'
-import InformationCard from './InformationCard'
+import { CharacterCard, CharacterName, CharacterBirthYear } from './Styled'
 import { useFetctDataPrint } from '../hooks/useDataFetchPrint'
 
-export default function Character({ character }) {
-  useFetctDataPrint(character.url)
+export default function Character({ name, birth_year, url }) {
+  useFetctDataPrint(url)
 
-  return <InformationCard {...character} />
+  return (
+    <CharacterCard>
+      <CharacterName>{name}</CharacterName>
+      <CharacterBirthYear>{birth_year}</CharacterBirthYear>
+    </CharacterCard>
+  )
 }

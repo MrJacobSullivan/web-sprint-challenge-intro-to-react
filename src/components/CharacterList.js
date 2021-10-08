@@ -21,7 +21,7 @@ export default function CharacterList() {
         <ul>
           {data.map((character) => (
             <li key={character.name}>
-              <Character character={character} />
+              <Character {...character} />
             </li>
           ))}
         </ul>
