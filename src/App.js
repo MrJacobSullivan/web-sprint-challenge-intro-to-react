@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useDataFetch } from './hooks/useDataFetch'
 import { BASE_URL } from './constants'
 import Character from './components/Character'
+import './reset.css'
 import './App.css'
 
 const App = () => {
