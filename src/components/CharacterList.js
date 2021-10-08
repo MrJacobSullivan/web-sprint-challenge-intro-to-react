@@ -14,15 +14,13 @@ export default function CharacterList() {
   }, [data])
 
   return (
-    <CharacterListContainer>
+    <CharacterListContainer className='accordion'>
       {loading ? (
         <p>loading...</p>
       ) : (
         <ul>
-          {data.map((character) => (
-            <li key={character.name}>
-              <Character {...character} />
-            </li>
+          {data.map((character, index) => (
+            <Character key={index} {...character} />
           ))}
         </ul>
       )}

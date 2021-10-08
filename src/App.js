@@ -7,7 +7,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <Main>
+    <Main className='container'>
       <Title>Characters</Title>
       <CharacterList />
     </Main>
